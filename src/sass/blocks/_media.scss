@@ -19,7 +19,16 @@
 			font-size: 16px;
 		}
 	}
+
+	.consultation {
+		.title {
+			&__left {
+				font-size: 32px;
+			}
+		}
+	}
 }
+
 
 @media (max-width: 767px) {
 	.container {
@@ -83,6 +92,30 @@
 
 		&__icon {
 			width: 250px;
+		}
+	}
+
+	.button {
+		&_submit {
+			width: 100%;
+		}
+	}
+
+	.feed-form {
+		margin: 38px auto 0 auto;
+	}
+
+	.consultation {
+		.consultation__description {
+			font-size: 16px;
+			text-align: center;
+		}
+
+		.title {
+			&__left {
+				font-size: 24px;
+				text-align: center;
+			}
 		}
 	}
 }
@@ -155,10 +188,6 @@
 
 	.adventages {
 
-		&__header {
-			font-size: 22px;
-		}
-
 		&__icons {
 			align-items: center;
 		}
@@ -166,5 +195,33 @@
 		&__icon {
 			width: 100%;
 		}
+
+		.title {
+			font-size: 22px;
+		}
 	}
+
+	.feed-form {
+		width: 280px;
+	}
+
+	.consultation {
+		min-height: 450px;
+		.title {
+			&__left {
+				font-size: 13px;
+				line-height: 30px;
+			}
+		}
+	}
+
+
+
+	.button {
+
+		&_submit {
+			width: 100%;
+		}
+	}
+
 }
