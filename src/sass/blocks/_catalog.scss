@@ -140,30 +140,29 @@
 		&__list {
 			width: 50%;
 			margin-left: 20px;
-			padding-left: 19px;
 			margin-bottom: 0;
 			transform: translateX(0%);
 			padding-right: 20px;
-			list-style-type: none;
 			text-align: left;
 			transition: 0.5s all;
-
-
-			li {
-				position: relative;
-				font-weight: 300;
-				font-size: 14px;
-				color: #555555;
-				margin-bottom: 10px;
-
-				&::before {
-					position: absolute;
-					content: "";
-					width: 5px;
-					height: 5px;
-					background-color: $main-color;
-					left: -19px;
-					top: 7px;
+			ul{
+				list-style-type: none;
+				li {
+					position: relative;
+					font-weight: 300;
+					font-size: 14px;
+					color: #555555;
+					margin-bottom: 10px;
+	
+					&::before {
+						position: absolute;
+						content: "";
+						width: 5px;
+						height: 5px;
+						background-color: $main-color;
+						left: -19px;
+						top: 7px;
+					}
 				}
 			}
 
@@ -177,6 +176,7 @@
 				left: calc(50% - 19px);
 				transform: translateX(-50%);
 				bottom: 0;
+				cursor: pointer;
 
 				&:hover {
 					color: $main-color;
@@ -191,3 +191,8 @@
 
 	}
 }
+
+
+
+
+

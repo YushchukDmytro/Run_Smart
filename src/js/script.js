@@ -218,4 +218,16 @@ window.addEventListener('DOMContentLoaded', (e) => {
 		formControl.classList.remove('invalid');
 	}
 
+	const upArrow = document.querySelector('.pageup');
+
+	window.addEventListener('scroll', () => {
+		if(window.scrollY > 1600) {
+			upArrow.classList.add('pageup__show');
+		} else {
+			upArrow.classList.remove('pageup__show');
+		}
+
+	});
+
+
 });
